@@ -1,0 +1,11 @@
+Feature: Sorting after cart actions
+Scenario: Sort search results after adding product to cart
+
+OPEN_HOME
+SEARCH "iphone 15"
+OPEN_FIRST_PRODUCT
+ADD_TO_CART
+OPEN_HOME
+SEARCH "iphone 15"
+SORT_BY_PRICE "asc"
+ASSERT_PRICES_SORTED "asc"

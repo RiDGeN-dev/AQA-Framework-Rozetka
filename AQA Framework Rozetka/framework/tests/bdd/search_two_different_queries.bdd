@@ -1,0 +1,8 @@
+Feature: Consecutive searches
+Scenario: Search iPhone then Samsung
+
+OPEN_HOME
+SEARCH "iphone 15"
+ASSERT_RESULTS_CONTAIN "iphone"
+SEARCH "samsung"
+ASSERT_RESULTS_CONTAIN "samsung"

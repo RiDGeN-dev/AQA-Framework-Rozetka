@@ -1,0 +1,6 @@
+Feature: Search product on Rozetka
+Scenario: Search laptop by query
+
+OPEN_HOME
+SEARCH "ноутбук"
+ASSERT_RESULTS_CONTAIN "ноутбук"

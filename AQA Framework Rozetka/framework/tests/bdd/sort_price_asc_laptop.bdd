@@ -1,0 +1,7 @@
+Feature: Sort by price
+Scenario: Sort laptops ascending
+
+OPEN_HOME
+SEARCH "ноутбук"
+SORT_BY_PRICE "asc"
+ASSERT_PRICES_SORTED "asc"

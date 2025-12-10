@@ -1,0 +1,6 @@
+Feature: Navigate to category
+Scenario: Go to TV category from home
+
+OPEN_HOME
+OPEN_CATEGORY "Телевізори та мультимедіа"
+ASSERT_CATEGORY_PAGE_TITLE_CONTAINS "Телевізори"

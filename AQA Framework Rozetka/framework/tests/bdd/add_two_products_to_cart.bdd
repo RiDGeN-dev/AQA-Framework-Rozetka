@@ -1,0 +1,14 @@
+Feature: Add multiple products to cart
+Scenario: Add iPhone and laptop to cart
+
+OPEN_HOME
+SEARCH "iphone 15"
+OPEN_FIRST_PRODUCT
+ADD_TO_CART
+OPEN_HOME
+SEARCH "ноутбук"
+OPEN_FIRST_PRODUCT
+ADD_TO_CART
+OPEN_CART
+ASSERT_CART_CONTAINS "iphone"
+ASSERT_CART_CONTAINS "ноутбук"
