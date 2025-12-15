@@ -1,0 +1,9 @@
+Feature: Add to cart
+Scenario: Add laptop from search to cart
+
+OPEN_HOME
+SEARCH "ноутбук"
+OPEN_FIRST_PRODUCT
+ADD_TO_CART
+OPEN_CART
+ASSERT_CART_CONTAINS "ноутбук"

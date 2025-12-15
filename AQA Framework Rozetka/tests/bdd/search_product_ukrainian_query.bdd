@@ -1,0 +1,6 @@
+Feature: Search with Ukrainian query
+Scenario: Search refrigerator in Ukrainian
+
+OPEN_HOME
+SEARCH "холодильник"
+ASSERT_RESULTS_CONTAIN "холодильник"

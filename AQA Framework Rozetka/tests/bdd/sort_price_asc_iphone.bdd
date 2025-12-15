@@ -1,0 +1,7 @@
+Feature: Sort by price
+Scenario: Sort iPhone search results ascending
+
+OPEN_HOME
+SEARCH "iphone 15"
+SORT_BY_PRICE "asc"
+ASSERT_PRICES_SORTED "asc"

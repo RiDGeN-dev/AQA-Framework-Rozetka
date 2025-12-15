@@ -1,0 +1,7 @@
+Feature: Sort by price
+Scenario: Sort TVs descending
+
+OPEN_HOME
+SEARCH "телевізор"
+SORT_BY_PRICE "desc"
+ASSERT_PRICES_SORTED "desc"

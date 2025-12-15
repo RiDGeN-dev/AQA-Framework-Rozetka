@@ -23,8 +23,8 @@ class HomePage(BasePage):
     def change_language(self, lang_code: str):
         # Тут простий варіант: переключення за посиланням у футері/шапці
         # Ти можеш підлаштувати локатор під свій інтерфейс Rozetka
-        if lang_code == "ru":
-            xpath = "//a[contains(@href, 'lang=ru')]"
+        if lang_code == "eng":
+            xpath = "//a[contains(@href, 'lang=eng')]"
         else:
             xpath = "//a[contains(@href, 'lang=ua') or contains(@href, 'lang=uk')]"
         self.click(By.XPATH, xpath)

@@ -1,0 +1,6 @@
+Feature: Change language
+Scenario: Change site language to English
+
+OPEN_HOME
+CHANGE_LANGUAGE "eng"
+ASSERT_LANGUAGE_IS "eng"

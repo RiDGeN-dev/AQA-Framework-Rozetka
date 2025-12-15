@@ -1,0 +1,13 @@
+Feature: Cart persistence
+Scenario: Cart content is visible after language change
+
+OPEN_HOME
+SEARCH "iphone 15"
+OPEN_FIRST_PRODUCT
+ADD_TO_CART
+OPEN_CART
+ASSERT_CART_CONTAINS "iphone"
+CHANGE_LANGUAGE "eng"
+ASSERT_LANGUAGE_IS "eng"
+OPEN_CART
+ASSERT_CART_CONTAINS "iphone"

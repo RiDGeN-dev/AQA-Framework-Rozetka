@@ -1,0 +1,6 @@
+Feature: Search product on Rozetka
+Scenario: Search Samsung smartphone
+
+OPEN_HOME
+SEARCH "samsung galaxy"
+ASSERT_RESULTS_CONTAIN "samsung"

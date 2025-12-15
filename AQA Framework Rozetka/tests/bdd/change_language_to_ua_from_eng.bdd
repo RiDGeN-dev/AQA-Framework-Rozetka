@@ -1,0 +1,8 @@
+Feature: Change language
+Scenario: Change language to Ukrainian after English
+
+OPEN_HOME
+CHANGE_LANGUAGE "eng"
+ASSERT_LANGUAGE_IS "eng"
+CHANGE_LANGUAGE "uk"
+ASSERT_LANGUAGE_IS "uk"

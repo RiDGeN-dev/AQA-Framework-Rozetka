@@ -1,0 +1,6 @@
+Feature: Navigate to category
+Scenario: Go to Smartphones category from home
+
+OPEN_HOME
+OPEN_CATEGORY "Смартфони, ТВ і електроніка"
+ASSERT_CATEGORY_PAGE_TITLE_CONTAINS "Смартфони"

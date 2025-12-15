@@ -1,0 +1,8 @@
+Feature: Search after language change
+Scenario: Search product on English UI
+
+OPEN_HOME
+CHANGE_LANGUAGE "eng"
+ASSERT_LANGUAGE_IS "eng"
+SEARCH "iphone 15"
+ASSERT_RESULTS_CONTAIN "iphone"
