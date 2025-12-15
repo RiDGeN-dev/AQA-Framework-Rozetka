@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r AQA Framework Rozetka/requirmets.txt
+          pip install -r requirmets.txt
           
       - name: Run pytest
         run: |
